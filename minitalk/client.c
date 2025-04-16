@@ -1,7 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   client.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: malopes- <malopes-@student.42.rio>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/16 15:19:18 by malopes-          #+#    #+#             */
+/*   Updated: 2025/04/16 15:19:21 by malopes-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft/libft.h"
 
-void send_char(int pid, unsigned char c)
+void	send_char(int pid, unsigned char c)
 {
 	int	bit;
 
@@ -19,7 +30,7 @@ void send_char(int pid, unsigned char c)
 
 int	main(int argc, char **argv)
 {
-	int	pid;
+	int		pid;
 	char	*msg;
 
 	if (argc != 3)

@@ -11,18 +11,18 @@ SRC =					ft_atoi.c ft_itoa_base.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_print
 OBJS = $(SRC:.c=.o)
 
 $(NAME) : $(OBJS)
-	ar -rc $(NAME) $(OBJS)
+	@ar -rc $(NAME) $(OBJS)
 
 .c.o:
-	$(CC) $(FLAG) -c $< -o $(<:.c=.o)
+	@$(CC) $(FLAG) -c $< -o $(<:.c=.o)
 
 all: $(NAME)
 
 clean:
-	$(RM) $(OBJS)
+	@$(RM) $(OBJS)
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean $(NAME)
 
